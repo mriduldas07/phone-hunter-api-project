@@ -12,6 +12,7 @@ const searchPhone = () =>{
 const displayPhone = phones =>{
     const searchResult = document.getElementById('display-phone');
     document.getElementById('display-phone').innerHTML = '';
+    document.getElementById('display-details').innerHTML = '';
     phones.forEach(phone => {
         console.log(phone);
         const div = document.createElement('div');
@@ -57,8 +58,13 @@ const displayDetails = (details) =>{
         <h4 class="card-title"><span class="text-primary">Memory:</span> ${details.mainFeatures.memory ? details.mainFeatures.memory: ''} </h4>
         <h4 class="card-title"><span class="text-primary">Sensors:</span> ${details.mainFeatures.sensors ? details.mainFeatures.sensors: ''} </h4>
         <h4 class="card-title"><span class="text-primary">Storage:</span> ${details.mainFeatures.storage ? details.mainFeatures.storage: ''} </h4>
-        <p class="card-text"></p>
-        <button class="btn btn-outline-primary">More Details</button>
+        <h4 class="card-title"><span class="text-primary">Bluetooth:</span> ${details.others.Bluetooth ? details.others.Bluetooth: ''} </h4>
+        <h4 class="card-title"><span class="text-primary">GPS:</span> ${details.others.GPS ? details.others.GPS: ''} </h4>
+        <h4 class="card-title"><span class="text-primary">NFC:</span> ${details.others.NFC ? details.others.NFC: ''} </h4>
+        <h4 class="card-title"><span class="text-primary">Radio:</span> ${details.others.Radio ? details.others.Radio: ''} </h4>
+        <h4 class="card-title"><span class="text-primary">USB:</span> ${details.others.USB ? details.others.USB: ''} </h4>
+        <h4 class="card-title"><span class="text-primary">WLAN:</span> ${details.others.WLAN ? details.others.WLAN: ''} </h4>
+        
       </div>
     </div>
   </div>
