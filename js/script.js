@@ -55,9 +55,11 @@ const displayDetails = (details) =>{
         <h3 class="card-title"><span class="text-primary">ReleaseDate:</span> ${details.releaseDate ? details.releaseDate: ''} </h3>
         <h4 class="card-title"><span class="text-primary">Chipset:</span> ${details.mainFeatures.chipset ? details.mainFeatures.chipset: ''} </h4>
         <h4 class="card-title"><span class="text-primary">Display Size:</span> ${details.mainFeatures.displaySize ? details.mainFeatures.displaySize: ''} </h4>
-        <h4 class="card-title"><span class="text-primary">Memory:</span> ${details.mainFeatures.memory ? details.mainFeatures.memory: ''} </h4>
+        <h4 class="card-title"><span class="text-primary">Memory:</span> ${details.mainFeatures.memory ? details.mainFeatures.memory: ''} </h4></br>
+        <h3 class="text-center text-danger">Sensors</h3></br>
         <h4 class="card-title"><span class="text-primary">Sensors:</span> ${details.mainFeatures.sensors ? details.mainFeatures.sensors: ''} </h4>
-        <h4 class="card-title"><span class="text-primary">Storage:</span> ${details.mainFeatures.storage ? details.mainFeatures.storage: ''} </h4>
+        <h4 class="card-title"><span class="text-primary">Storage:</span> ${details.mainFeatures.storage ? details.mainFeatures.storage: ''} </h4></br>
+        <h3 class="text-center text-danger">Others</h3></br>
         <h4 class="card-title"><span class="text-primary">Bluetooth:</span> ${details.others.Bluetooth ? details.others.Bluetooth: ''} </h4>
         <h4 class="card-title"><span class="text-primary">GPS:</span> ${details.others.GPS ? details.others.GPS: ''} </h4>
         <h4 class="card-title"><span class="text-primary">NFC:</span> ${details.others.NFC ? details.others.NFC: ''} </h4>
