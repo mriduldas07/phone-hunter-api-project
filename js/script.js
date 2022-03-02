@@ -13,8 +13,7 @@ const displayPhone = phones =>{
     const searchResult = document.getElementById('display-phone');
     document.getElementById('display-phone').innerHTML = '';
     document.getElementById('display-details').innerHTML = '';
-    phones.forEach(phone => {
-        console.log(phone);
+    phones.slice(0,20).forEach(phone => {
         const div = document.createElement('div');
         div.classList.add('row');
         div.innerHTML = `
