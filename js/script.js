@@ -1,5 +1,8 @@
+//search btn
 const searchPhone = () =>{
-    const searchText = document.getElementById('search-input').value;
+  const searchText = document.getElementById('search-input').value;
+    // spinnerFunction call
+    toggleSpinner('block')
     //clear search
     document.getElementById('search-input').value = '';
     //fetch phone api
@@ -30,6 +33,8 @@ const displayPhone = phones =>{
         `;
         searchResult.appendChild(div);
     });
+    //spinnerFunction call
+    toggleSpinner('none')
 }
 // exploring phone details
 const exploreDetailes = phoneId =>{
@@ -72,3 +77,7 @@ const displayDetails = (details) =>{
     `;
     detailsResult.appendChild(div);
 }
+  //toggle spinner
+  const toggleSpinner = displayStyle =>{
+    document.getElementById('spinner').style.display = displayStyle;
+  } 

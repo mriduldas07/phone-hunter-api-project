@@ -4,3 +4,6 @@ h1{
 img{
     width: 40%;
 }
+#spinner{
+    display: none;
+}
